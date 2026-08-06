@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>iPad 9 Mockup — 120px</title>
+<style>
+  :root{
+    --device-width: 120px;   /* small, consistent size */
+    --bezel: 6px;
+    --screen-radius: 6px;
+    --device-color: #e6e9ee; /* silver (change to #111827 for space-gray) */
+  }
+
+  body{
+    margin: 20px;
+    background:#f6f7f9;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+  }
+
+  .device {
+    width: var(--device-width);
+    --screen-aspect: 4 / 3;
+    --screen-width: calc(100% - (var(--bezel) * 2));
+    --screen-height: calc(var(--screen-width) / (var(--screen-aspect)));
+    border-radius: 18px;
+    padding: var(--bezel);
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(15,23,42,0.12);
+    background-color: var(--device-color);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+
+  .screen {
+    width: var(--screen-width);
+    height: var(--screen-height);
+    background:#000;
+    border-radius: var(--screen-radius);
+    overflow:hidden;
+  }
+
+  .screen img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .home-button {
+    position:absolute;
+    bottom: calc(var(--bezel) / 2);
+    left:50%;
+    transform:translateX(-50%);
+    width:14px; height:14px;
+    background: rgba(0,0,0,0.12);
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.06);
+  }
+
+  .label { width:var(--device-width); text-align:center; font-size:11px; color:#334155; margin-top:6px; }
+  .landscape { --screen-aspect: 3 / 4; }
+  .space-gray { --device-color:#111827; color:#fff; }
+  .black { --device-color:#0b0b0b; color:#fff; }
+</style>
+</head>
+<body>
+
+<!-- Portrait, silver -->
+<div style="display:flex;flex-direction:column;align-items:center">
+  <div class="device">
+    <div class="screen">
+      <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/ipad%209.jpg" alt="iPad content">
+    </div>
+    <div class="home-button" aria-hidden="true"></div>
+  </div>
+  <div class="label">iPad 9 — portrait (120px)</div>
+</div>
+
+<!-- Landscape, space-gray -->
+<div style="display:flex;flex-direction:column;align-items:center">
+  <div class="device space-gray landscape">
+    <div class="screen">
+      <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/ipad%209.jpg" alt="iPad content">
+    </div>
+    <div class="home-button" aria-hidden="true"></div>
+  </div>
+  <div class="label">iPad 9 — landscape (120px)</div>
+</div>
+
+</body>
+</html>
