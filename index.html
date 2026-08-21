@@ -1,18 +1,163 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Choice Deals - Best Amazon Deals & Product Reviews</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top Choice Deals - Best Amazon Deals & Product Reviews</title>
+
 <meta name="description" content="Discover the best Amazon deals, top products and helpful product reviews at Top Choice Deals.">
+
 <link rel="canonical" href="https://blast504.github.io/top-choice-deals/">
-    <meta property="og:title" content="Top Choice Deals - Best Amazon Deals & Product Reviews">
+
+<meta property="og:title" content="Top Choice Deals - Best Amazon Deals & Product Reviews">
 <meta property="og:description" content="Discover the best Amazon deals, top products and helpful product reviews at Top Choice Deals.">
 <meta property="og:url" content="https://blast504.github.io/top-choice-deals/">
 <meta property="og:type" content="website">
-    <meta property="og:image" content="https://blast504.github.io/top-choice-deals/top-choice-deals.jpg">
-    <style>
-    /* CONTACT SECTION FIX */
+<meta property="og:image" content="https://blast504.github.io/top-choice-deals/top-choice-deals.jpg">
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #ffffff;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #222;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.products-section,
+#pet-supplies,
+#tools,
+#school,
+#ebay-deals {
+    width: 100%;
+    padding: 30px 20px;
+    clear: both;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.products-grid,
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-card img,
+.product-image {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    line-height: 1.5;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #0073aa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #005f8d;
+}
+
+/* =========================
+   CONTACT SECTION FIX
+========================= */
+
 #contact {
     display: block;
     width: 100%;
@@ -40,493 +185,1191 @@
     font-weight: bold;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     clear: both;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
+    padding: 25px 20px;
+    background: #222;
+    color: #fff;
 }
-    </style>
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .products-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img,
+    .product-image {
+        max-width: 160px;
+        height: 160px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
     <h1>Top Choice Deals</h1>
-    <p>Best Amazon US Deals & Product Reviews</p>
+    <p>Best Amazon US Deals &amp; Product Reviews</p>
 </header>
-    <nav>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
     <a href="#home">Home</a>
     <a href="#electronics">Electronics</a>
-    <a href="#home-kitchen">Home & Kitchen</a>
+    <a href="#home-kitchen">Home &amp; Kitchen</a>
     <a href="#fashion">Fashion</a>
     <a href="#pet-supplies">Pet Supplies</a>
     <a href="#tools">Tools</a>
     <a href="#school">School</a>
     <a href="#contact">Contact</a>
 </nav>
+
+
+<!-- =========================
+     ELECTRONICS
+========================= -->
+
 <section id="home" class="products products-section">
+
 <h2 id="electronics">📱 Electronics</h2>
+
 <div class="products-grid">
+
 <div class="product-card">
-    <img class="product-image" src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg" alt="Apple AirPods Pro">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg"
+         alt="Apple AirPods Pro">
+
     <h3>Apple AirPods Pro (2nd Gen)</h3>
+
     <p>Premium wireless earbuds with Active Noise Cancellation.</p>
-    <a class="button" href="https://amzn.to/3SeQSvB" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/3SeQSvB"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=250" alt="Echo Dot">
+    <img class="product-image"
+         src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=250"
+         alt="Echo Dot">
+
     <h3>Amazon Echo Dot (5th Gen)</h3>
+
     <p>Smart speaker with Alexa for music, smart home control and more.</p>
-    <a class="button" href="https://amzn.to/4wHPy3u" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/4wHPy3u"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=120" alt="Kindle Paperwhite">
+    <img class="product-image"
+         src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=120"
+         alt="Kindle Paperwhite">
+
     <h3>Kindle Paperwhite</h3>
+
     <p>Read thousands of books on Amazon's most popular e-reader.</p>
-    <a class="button" href="https://amzn.to/3TGQhTN" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/3TGQhTN"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg" alt="Logitech MX Master 3S">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg"
+         alt="Logitech MX Master 3S">
+
     <h3>Logitech MX Master 3S Wireless Mouse</h3>
+
     <p>Ultra-fast scrolling, ergonomic design, 8K DPI sensor.</p>
-    <a class="button" href="https://amzn.to/3Uix7DW" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/3Uix7DW"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="https://m.media-amazon.com/images/I/61BF3G-d1SS._AC_SY300_SX300_QL70_FMwebp_.jpg" alt="PlayStation 5">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61BF3G-d1SS._AC_SY300_SX300_QL70_FMwebp_.jpg"
+         alt="PlayStation 5">
+
     <h3>Sony PlayStation 5 Disc Edition</h3>
+
     <p>4K Blu-ray player, 16GB GDDR6, 825GB SSD, Wi-Fi 6.</p>
-    <a class="button" href="https://amzn.to/4wO13Xc" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/4wO13Xc"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="ipad 9.jpg" alt="Apple iPad">
+    <img class="product-image"
+         src="ipad 9.jpg"
+         alt="Apple iPad">
+
     <h3>Apple iPad 9th Generation (2021)</h3>
+
     <p>10.2-inch, 64GB, Wi-Fi, Space Gray (Renewed).</p>
-    <a class="button" href="https://amzn.to/4xl46FY" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <a class="button"
+       href="https://amzn.to/4xl46FY"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
 </div>
+
+
 <div class="product-card">
-    <img class="product-image" src="https://m.media-amazon.com/images/I/41MfXi9ERtL._AC_.jpg" alt="Apple Watch Series 10">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/41MfXi9ERtL._AC_.jpg"
+         alt="Apple Watch Series 10">
 
     <h3>Apple Watch Series 10</h3>
 
-    <p>Advanced health tracking, GPS, fitness features, and all-day battery life.</p>
+    <p>
+        Advanced health tracking, GPS, fitness features,
+        and all-day battery life.
+    </p>
 
-    <a class="button" href="https://amzn.to/4fTYeMT" target="_blank">
-        Shop Now
+    <a class="button"
+       href="https://amzn.to/4fTYeMT"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
     </a>
-<a class="button" href="https://www.ebay.com/itm/256943690155?itmprp=encpd%3AAQALAAAD8NGFD9lUSL7KKizcqF4L8vr8q98DvUQDa0kkYd4kYuClXE6RKmvq27lSDQwBPcuB4MDFknqSt341z5CPDZmJtI3j54M2hqRFSidz0XpYr521wu24gBOvdpKGxoMyPHA48mt2Y1diBstyTZu9cloumgpurZF7LVa0dqAK5qEAirrkNHOmewufTJQ8fasq%2BvA2HYnpixbIVJCBK63fjT6PazkUbSOtsNk0eNEzIbZL4IzapucFv5NVWlbx715ss8csHB1xoxNjlPBs8DR2HdU5%2BIQuD2SpMGXoByf%2BB%2FaqVCzGqdO%2FcFZsrn5%2FpRwqN1J94c%2BDYnzlY8RH06qmDutxhn9aN2IwJQ%2FkAqu1nmj%2BHlJMkbTBB7AQBmn%2Bv9SNF%2BK6LiALODbpiGdW3y%2FEZRd7rpjrs5aGwAvVB2u9RfZzsMqR9PmOMD5eB1BvZ6vaDO7I94IIoq22fFwGEfTjNKpj9iEXomKBck5VPIhT4pEtZrGGwzhZwjd7Q487a%2Fi4nKblOlYf1rh%2BnuN%2BAZC5ZYpxZJVLBUTOjZlt7gakp3OmklwfP2zxUa%2BF6ktr0mKg%2BgOGTOucgWxeErNC6EYvTaOZjBGUYpKKS2f1V71TJ0p%2FjMQeA4srcFdKbbu6SgPDFylehsDAfSNAEfiaaApRMRdxAeO9GTU%2FDjjMCrO9FQFDyI%2FUFy3rYexJXhjZNZgvOC%2BhEAR2bRG46OGj7IvBAj6Vv%2FW1SsVj5fRJd%2BtPQw053V%2Fea%2Fb%2F%2Fywg1MS9HUvtXWxvU6ghNR3YQmiYv4hi2I9y7UK7i5%2FgSZdRhIRWTtOOO3IP8Jbzy%2BiHRCbu2NbwPXGDgrd2nmUwJWL3QBy8P7zseK5XlIJGRurN7fDovVaorXKbMZ668hd2dPA7ZVKUs4U6bHS8NiijSvpZRPrhV9yhUakZbpGr%2F6S47u1tpRgPFdNZgROEbhKS6ufiWjb0XJD8Rh8C6N4xyQiCy5i%2FDMHtaCS2KmG5zeK9MT4C4Gf16037qmf8ISyKgV8wvmzNihrnViII4xd4uZAtNAR0SuzZ1Vi%2BOkDIsF%2BHpaMmtTp5t2mQ7rbjXyO3fNIiJ76RBKdoMMlhYkVE7CEfFwD2yP%2BtSCDzT3NAdXJ6S62MfNdwpE4t8hHWgvpdySwz10X6KxAfT8PXfB551QvDW0ydAkf6Cng9jQWpghVpa%2B5Nc8LhGUttaj38SI5zATUI3c9SLul7BgOowDjuH9d7R%2BTdHziNHcqjREs%2B7d2f%2B0z2IgzPSU90WyPcJ%2BGcFSmuajc0jwRKaYyKUnfYN4ogYdlp8iKz915lM10VXHw13HTba7pfw9lgBqVwM2NLR1UiRuSHjuk8mQ%3D%3D&itmmeta=wwHmKhYwY%2Fjx0DQwMUtaRTZFMjIzRDI5QktYRDZBMlg1SlgyRjQwMUtaRTZFMU1YNFoyNDVNN0RHSzNIVFczVragDA%3D%3D&amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xCNrMYR9rqI1Qb4bxgs2pH4NAZgTu0FLo6qsDdo04A5vCBjurIWYpAcjHnNjjnvSBQFqlnQMXnXweEQgWrcM6HuP4yGmBVR2C0mj1akQ2ubwIOw7Tb25w30HgC6YGV3OnnUQOHUjPOgjDl6IEj0qrvDTVuwElwFpwZfHa2qzi5kNlN89gKx4XyhkAIKsuLySko%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&customid=topchoice&toolid=10001&mkevt=1" target="_blank">
-    Buy on eBay
-</a>
+
+    <a class="button"
+       href="https://www.ebay.com/itm/256943690155"
+       target="_blank"
+       rel="noopener noreferrer">
+       Buy on eBay
+    </a>
 </div>
-    </div>
+
+</div>
 </section>
-<h2 id="home-kitchen">🏠 Home &amp; Kitchen</h2>
+
+
+<!-- =========================
+     HOME & KITCHEN
+========================= -->
+
+<section id="home-kitchen" class="products-section">
+
+<h2>🏠 Home &amp; Kitchen</h2>
+
 <div class="products-grid">
 
-<!-- Marble Table Lamp -->
 <div class="product-card">
-  <img class="product-image" src="marble-lamp.jpg" alt="Marble Table Lamp">
-  <h3>Luxury Marble Lamp Collection</h3>
-  <p>Rechargeable touch marble table lamp.</p>
 
-  <a href="YOUR-MARBLE-LAMP-AFFILIATE-LINK" target="_blank" rel="nofollow sponsored" class="button">
-    View Deal
-  </a>
+    <img class="product-image"
+         src="marble-lamp.jpg"
+         alt="Marble Table Lamp">
+
+    <h3>Luxury Marble Lamp Collection</h3>
+
+    <p>Rechargeable touch marble table lamp.</p>
+
+    <a href="YOUR-MARBLE-LAMP-AFFILIATE-LINK"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
+    </a>
+
 </div>
-  <!-- Non-Stick Cookware & Bakeware Set -->
-  <div class="product-card">
-    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/cookware.jpg" alt="Non-Stick Cookware & Bakeware Set">
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/cookware.jpg"
+         alt="Non-Stick Cookware &amp; Bakeware Set">
+
     <h3>Non-Stick Cookware &amp; Bakeware Set</h3>
-    <a href="https://amzn.to/4xz8kdo" target="_blank" rel="nofollow sponsored" class="button">
-      View Deal
+
+    <a href="https://amzn.to/4xz8kdo"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
     </a>
-  </div>  
-<!-- Fullstar Vegetable Chopper -->
+
+</div>
+
+
 <div class="product-card">
-  <img src="fullstar-chopper.jpg" alt="Fullstar Vegetable Chopper & Spiralizer">
-  <h3>Fullstar Vegetable Chopper &amp; Spiralizer</h3>
-  <p>Easy-to-use vegetable chopper and spiralizer for faster meal preparation.</p>
-  <a class="button" href="https://amzn.to/45RkodZ" target="_blank" rel="nofollow sponsored">
-    View Deal
-  </a>
+
+    <img class="product-image"
+         src="fullstar-chopper.jpg"
+         alt="Fullstar Vegetable Chopper &amp; Spiralizer">
+
+    <h3>Fullstar Vegetable Chopper &amp; Spiralizer</h3>
+
+    <p>
+        Easy-to-use vegetable chopper and spiralizer
+        for faster meal preparation.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/45RkodZ"
+       target="_blank"
+       rel="nofollow sponsored">
+       View Deal
+    </a>
+
 </div>
-<!-- Kitchen Organizer / Rack -->
+
+
 <div class="product-card">
-  <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/kitchen-rack.jpg" alt="Kitchen Organizer Rack">
 
-  <h3>Kitchen Organizer &amp; Rack</h3>
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/kitchen-rack.jpg"
+         alt="Kitchen Organizer Rack">
 
-  <p>Space-saving kitchen sink organizer and storage rack.</p>
+    <h3>Kitchen Organizer &amp; Rack</h3>
 
-  <a href="YOUR-KITCHEN-RACK-AFFILIATE-LINK" target="_blank" rel="nofollow sponsored" class="button">
-    View Deal
-  </a>
+    <p>
+        Space-saving kitchen sink organizer and storage rack.
+    </p>
+
+    <a href="YOUR-KITCHEN-RACK-AFFILIATE-LINK"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
+    </a>
+
 </div>
-<!-- Ninja Blender -->
+
+
 <div class="product-card">
-  <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/ninja-mega.jpg" alt="Ninja Kitchen BL770 Blender/Food Processor">
 
-  <h3>Ninja Kitchen BL770 Blender/Food Processor</h3>
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/ninja-mega.jpg"
+         alt="Ninja Kitchen BL770 Blender/Food Processor">
 
-  <a href="https://amzn.to/4q9OgLS" target="_blank" rel="nofollow sponsored" class="button">
-    View Deal
-  </a>
+    <h3>Ninja Kitchen BL770 Blender/Food Processor</h3>
+
+    <a href="https://amzn.to/4q9OgLS"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
+    </a>
+
 </div>
-<!-- Lenox Dinnerware -->
+
+
 <div class="product-card">
-  <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/lenox-butterfly.jpg" alt="Lenox Butterfly Meadow Porcelain 28-Piece Dinnerware Set for 4">
 
-  <h3>Lenox Butterfly Meadow Porcelain 28-Piece Dinnerware Set for 4</h3>
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/lenox-butterfly.jpg"
+         alt="Lenox Butterfly Meadow Porcelain 28-Piece Dinnerware Set for 4">
 
-  <a href="https://amzn.to/4czPw5s" target="_blank" rel="nofollow sponsored" class="button">
-    View Deal
-  </a>
+    <h3>Lenox Butterfly Meadow Porcelain 28-Piece Dinnerware Set for 4</h3>
+
+    <a href="https://amzn.to/4czPw5s"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
+    </a>
+
 </div>
-<!-- Existing placeholder product for utensil crock -->
+
+
 <div class="product-card">
-    <img class="product-image" src="kitchen untesil.jpg" alt="Utensil Crock / Kitchen Utensil Holder">
-    <h3>Featured Kitchen Utensil Crock (ASIN: B0GLPCVQWC)</h3>
-    <p>Trending in Kitchen & Dining — Best Sellers Rank: #51,445 in Kitchen & Dining; #161 in Utensil Crocks.</p>
-    <a class="button" href="https://amzn.to/4wiTwOV" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <img class="product-image"
+         src="kitchen untesil.jpg"
+         alt="Utensil Crock / Kitchen Utensil Holder">
+
+    <h3>Featured Kitchen Utensil Crock</h3>
+
+    <p>
+        Trending in Kitchen &amp; Dining.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4wiTwOV"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+
 </div>
+
 </div>
-    <h2 id="fashion">👗 Fashion</h2>
+</section>
+
+
+<!-- =========================
+     FASHION
+========================= -->
+
+<section id="fashion" class="products-section">
+
+<h2>👗 Fashion</h2>
 
 <div class="products-grid">
 
-  <!-- Fashion Product 1 -->
-  <div class="product-card">
-    <img class="product-image" src="bandana.jpg" alt="Satin Bandana Headscarf">
+<div class="product-card">
+
+    <img class="product-image"
+         src="bandana.jpg"
+         alt="Satin Bandana Headscarf">
+
     <h3>Satin Bandana Headscarf</h3>
+
     <p>Silky lightweight fashion scarf for women.</p>
-    <a class="button" href="https://amzn.to/4gd9vJn" target="_blank" rel="noopener noreferrer">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 2 -->
-  <div class="product-card">
-    <img class="product-image" src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/toloco-massage-gun.jpg"
+    <a class="button"
+       href="https://amzn.to/4gd9vJn"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/toloco-massage-gun.jpg"
          alt="TOLOCO Massage Gun">
+
     <h3>TOLOCO Massage Gun</h3>
-    <p>Deep tissue percussion massager for relaxation and recovery.</p>
-    <a class="button" href="https://amzn.to/3TGOyxZ" target="_blank" rel="nofollow sponsored noopener">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 3 -->
-  <div class="product-card">
-    <img class="product-image" src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/befen-handbag.jpg"
+    <p>
+        Deep tissue percussion massager
+        for relaxation and recovery.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/3TGOyxZ"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/befen-handbag.jpg"
          alt="Befen Genuine Leather Crossbody Handbag">
+
     <h3>Befen Genuine Leather Crossbody Handbag</h3>
-    <p>Stylish women's crossbody shoulder handbag for everyday use.</p>
-    <a class="button" href="https://amzn.to/4g3BfPE" target="_blank" rel="nofollow sponsored noopener">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 4 -->
-  <div class="product-card">
-    <img class="product-image" src="fashion-cap.jpg"
+    <p>
+        Stylish women's crossbody shoulder handbag
+        for everyday use.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4g3BfPE"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="fashion-cap.jpg"
          alt="Juiterchy Newsboy Cabbie Flower Cap">
+
     <h3>Juiterchy Newsboy Cabbie Flower Cap</h3>
-    <p>Classic fashion cap with a stylish flower design.</p>
-    <a class="button" href="https://amzn.to/3RFzjEU" target="_blank" rel="nofollow sponsored noopener">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 5 -->
-  <div class="product-card">
-    <img class="product-image" src="bobby-pins.jpg"
+    <p>
+        Classic fashion cap with a stylish flower design.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/3RFzjEU"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="bobby-pins.jpg"
          alt="Teenitor Bobby Pins">
+
     <h3>Teenitor 300-Piece Bobby Pins</h3>
-    <p>Large set of hair pins and accessories for everyday styling.</p>
-    <a class="button" href="https://amzn.to/4wqfsrx" target="_blank" rel="nofollow sponsored noopener">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 6 -->
-  <div class="product-card">
-    <img class="product-image" src="trektote.jpg"
+    <p>
+        Large set of hair pins and accessories
+        for everyday styling.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4wqfsrx"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="trektote.jpg"
          alt="TrekTote 15-Piece Women's Travel Toiletry Bag">
-    <h3>TrekTote 15-Piece Travel Toiletry Bag</h3>
-    <p>Convenient travel organizer set for toiletries and personal items.</p>
-    <a class="button" href="https://amzn.to/4fRSJQ9" target="_blank" rel="nofollow sponsored noopener">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 7 -->
-  <div class="product-card">
+    <h3>TrekTote 15-Piece Travel Toiletry Bag</h3>
+
+    <p>
+        Convenient travel organizer set
+        for toiletries and personal items.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4fRSJQ9"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
     <img class="product-image"
          src="https://m.media-amazon.com/images/I/71PwRJo4svL._AC_SY879_.jpg"
          alt="Avidlove Women Lingerie Satin Chemise">
-    <h3>Avidlove Women Lingerie V Neck Satin Chemise</h3>
-    <p>V-neck satin babydoll with lace cups and adjustable straps.</p>
-    <a class="button" href="https://www.amazon.com/dp/B072RJ4X8T"
-       target="_blank" rel="noopener noreferrer">
-      Shop Now
-    </a>
-  </div>
 
-  <!-- Fashion Product 8 -->
-  <div class="product-card">
+    <h3>Avidlove Women Lingerie V Neck Satin Chemise</h3>
+
+    <p>
+        V-neck satin babydoll with lace cups
+        and adjustable straps.
+    </p>
+
+    <a class="button"
+       href="https://www.amazon.com/dp/B072RJ4X8T"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
     <img class="product-image"
          src="https://m.media-amazon.com/images/I/61IoYNP+RLL._AC_SY879_.jpg"
          alt="Sexy Lingerie Dress">
+
     <h3>Sexy Lingerie Dress 2pcs Women Night Gown</h3>
-    <p>Open-front babydoll dress set with sheer mesh lace.</p>
-    <a class="button" href="https://amzn.to/4hfrKyY"
-       target="_blank" rel="noopener noreferrer">
-      Shop Now
+
+    <p>
+        Open-front babydoll dress set
+        with sheer mesh lace.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4hfrKyY"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
     </a>
-  </div>
-    
+
+</div>
+
 </div>
 </section>
-    <section id="pet-supplies">
-    <h2>🐾 Pet Supplies</h2>
- <div class="product-card">
-    <img src="tropiclean.jpg" alt="TropiClean Dental Water Additive">
-    <h3>TropiClean Dental Water Additive</h3>
-    <p>Easy-to-use dental water additive designed to help support fresh breath and cleaner teeth for dogs.</p>
-    <a href="https://amzn.to/4zaVSSz" class="button" target="_blank">View Deal</a>
-</div>
-<!-- Product 2 -->
-<div class="product-card">
-    <img src="petarmor.jpg" alt="PetArmor Plus for Dogs">
-    <h3>PetArmor Plus for Dogs – Extra Large Dogs</h3>
-    <p>3-month flea and tick protection for extra-large dogs.</p>
-    <a href="https://amzn.to/4wxBhFK" class="button" target="_blank">View Deal</a>
-</div>
-<!-- Product 3 -->
-<div class="product-card">
-    <img src="hemp-chews.jpg" alt="PawZitive Pets Hemp Calming Chews">
-    <h3>PawZitive Pets Hemp Calming Chews</h3>
-    <p>Soft hemp calming chews for dogs with chamomile, hemp seed, and melatonin.</p>
-    <a href="https://amzn.to/45U1qDt" class="button" target="_blank">View Deal</a>
-</div>
-<!-- Product 4 -->
-<div class="product-card">
-    
-    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/dogbed.jpg" alt="EHEYCIGA Orthopedic Small Dog Bed">
-    <p>Waterproof dog bed with egg-crate foam and washable cover.</p>
-    <a href="https://amzn.to/3S3wLAk" class="button" target="_blank">View Deal</a>
-</div>
 
-        <!-- Product 5 -->
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/fresh-step.jpg" alt="Fresh Step Multi-Cat Clumping Cat Litter">
-            <p>Clumping cat litter with odor-control features.</p>
-            <a href="https://amzn.to/4qvfVHH" class="button" target="_blank">View Deal</a>
-        </div>
 
-        <!-- Product 6 -->
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/herbley-cat-tree.jpg" alt="Heybly Cat Tree">
-            <p>Cat tower with scratching posts, perch, hammock and toys.</p>
-            <a href="https://amzn.to/3TRDJJt" class="button" target="_blank">View Deal</a>
-        </div>
+<!-- =========================
+     PET SUPPLIES
+========================= -->
 
-        <!-- Product 7 -->
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/water-food.jpg" alt="Wefeedy Automatic Cat Feeder and Water Dispenser">
-            <p>Food and water dispenser suitable for cats and dogs.</p>
-            <a href="https://amzn.to/4xuMpnp" class="button" target="_blank">View Deal</a>
-        </div>
+<section id="pet-supplies" class="products-section">
 
-        <!-- Product 8 -->
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/part-mix.jpg" alt="Purina Friskies Party Mix Cat Treats">
-            <p>Crunchy cat treats with chicken, liver and turkey flavors.</p>
-            <a href="https://amzn.to/4fRam2q" class="button" target="_blank">View Deal</a>
-        </div>
+<h2>🐾 Pet Supplies</h2>
 
-    <div class="product-card">
-        <img src="Dog-clipper.jpg" alt="Dog Grooming Clippers">
-
-        <h3>Dog Grooming Clippers</h3>
-
-        <p>
-            Professional pet grooming clippers for dogs and cats.
-            Quiet motor, rechargeable, and easy to use at home.
-        </p>
-
-        <a href="https://amzn.to/4fSukdj" class="button" target="_blank">
-            Shop Now
-        </a>
-    </div>
-</section>
-<h2 id="tools">🔧 Tools</h2>
 <div class="products-grid">
+
 <div class="product-card">
-    <img class="product-image" src="https://m.media-amazon.com/images/I/81YdkcvdCLL._AC_SL1500_.jpg" alt="JOREST 40-Piece CRV Screwdriver Set">
-    <h3>JOREST 40-Piece CRV Screwdriver Set (ASIN: B09FFCGLHK)</h3>
-    <p>Professional TORX screwdriver set for repairs and maintenance. #1 Best Seller in Screwdriver Sets.</p>
-    <p><strong>Best Sellers Rank:</strong> #51 in Tools & Home Improvement; #1 in Screwdriver Sets</p>
-    <a class="button" href="https://amzn.to/3RU8UTC" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <img src="tropiclean.jpg"
+         alt="TropiClean Dental Water Additive">
+
+    <h3>TropiClean Dental Water Additive</h3>
+
+    <p>
+        Easy-to-use dental water additive designed
+        to help support fresh breath and cleaner teeth for dogs.
+    </p>
+
+    <a href="https://amzn.to/4zaVSSz"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
 </div>
-    
+
+
 <div class="product-card">
-    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/sedy80.jpg" alt="SEDY 80-Piece Magnetic Nut Driver Bit Set">
+
+    <img src="petarmor.jpg"
+         alt="PetArmor Plus for Dogs">
+
+    <h3>PetArmor Plus for Dogs – Extra Large Dogs</h3>
+
+    <p>
+        3-month flea and tick protection
+        for extra-large dogs.
+    </p>
+
+    <a href="https://amzn.to/4wxBhFK"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="hemp-chews.jpg"
+         alt="PawZitive Pets Hemp Calming Chews">
+
+    <h3>PawZitive Pets Hemp Calming Chews</h3>
+
+    <p>
+        Soft hemp calming chews for dogs
+        with chamomile, hemp seed, and melatonin.
+    </p>
+
+    <a href="https://amzn.to/45U1qDt"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/dogbed.jpg"
+         alt="EHEYCIGA Orthopedic Small Dog Bed">
+
+    <h3>EHEYCIGA Orthopedic Small Dog Bed</h3>
+
+    <p>
+        Waterproof dog bed with egg-crate foam
+        and washable cover.
+    </p>
+
+    <a href="https://amzn.to/3S3wLAk"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/fresh-step.jpg"
+         alt="Fresh Step Multi-Cat Clumping Cat Litter">
+
+    <h3>Fresh Step Multi-Cat Clumping Cat Litter</h3>
+
+    <p>
+        Clumping cat litter with odor-control features.
+    </p>
+
+    <a href="https://amzn.to/4qvfVHH"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/herbley-cat-tree.jpg"
+         alt="Heybly Cat Tree">
+
+    <h3>Heybly Cat Tree</h3>
+
+    <p>
+        Cat tower with scratching posts,
+        perch, hammock and toys.
+    </p>
+
+    <a href="https://amzn.to/3TRDJJt"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/water-food.jpg"
+         alt="Wefeedy Automatic Cat Feeder and Water Dispenser">
+
+    <h3>Wefeedy Automatic Cat Feeder</h3>
+
+    <p>
+        Food and water dispenser suitable
+        for cats and dogs.
+    </p>
+
+    <a href="https://amzn.to/4xuMpnp"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/part-mix.jpg"
+         alt="Purina Friskies Party Mix Cat Treats">
+
+    <h3>Purina Friskies Party Mix Cat Treats</h3>
+
+    <p>
+        Crunchy cat treats with chicken,
+        liver and turkey flavors.
+    </p>
+
+    <a href="https://amzn.to/4fRam2q"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="Dog-clipper.jpg"
+         alt="Dog Grooming Clippers">
+
+    <h3>Dog Grooming Clippers</h3>
+
+    <p>
+        Professional pet grooming clippers for dogs and cats.
+        Quiet motor, rechargeable, and easy to use at home.
+    </p>
+
+    <a href="https://amzn.to/4fSukdj"
+       class="button"
+       target="_blank">
+       Shop Now
+    </a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- =========================
+     TOOLS
+========================= -->
+
+<section id="tools" class="products-section">
+
+<h2>🔧 Tools</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/81YdkcvdCLL._AC_SL1500_.jpg"
+         alt="JOREST 40-Piece CRV Screwdriver Set">
+
+    <h3>
+        JOREST 40-Piece CRV Screwdriver Set
+        (ASIN: B09FFCGLHK)
+    </h3>
+
+    <p>
+        Professional TORX screwdriver set
+        for repairs and maintenance.
+        #1 Best Seller in Screwdriver Sets.
+    </p>
+
+    <p>
+        <strong>Best Sellers Rank:</strong>
+        #51 in Tools &amp; Home Improvement;
+        #1 in Screwdriver Sets
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/3RU8UTC"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+
+</div>
+
+
+<div class="product-card">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/sedy80.jpg"
+         alt="SEDY 80-Piece Magnetic Nut Driver Bit Set">
+
     <h3>SEDY 80-Piece Magnetic Nut Driver Bit Set</h3>
-    <p>80-piece SAE & Metric magnetic nut driver and screwdriver bit set with a convenient storage case.</p>
-    <a href="https://amzn.to/45vyku6" class="button" target="_blank">View Deal</a>
+
+    <p>
+        80-piece SAE &amp; Metric magnetic nut driver
+        and screwdriver bit set with a convenient storage case.
+    </p>
+
+    <a href="https://amzn.to/45vyku6"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
 </div>
-    <!-- Product: Mini Welder -->
+
+
 <div class="product-card">
+
     <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/mini-welder.jpg"
          alt="200Amp Mini Portable Stick Welder">
 
     <h3>200Amp Mini Portable Stick Welder</h3>
 
-    <p>Compact 200Amp IGBT inverter welder with welding rods, gloves and accessories.</p>
+    <p>
+        Compact 200Amp IGBT inverter welder
+        with welding rods, gloves and accessories.
+    </p>
 
-    <a href="https://amzn.to/4qieXhD" class="button" target="_blank">
-        View Deal
+    <a href="https://amzn.to/4qieXhD"
+       class="button"
+       target="_blank">
+       View Deal
     </a>
+
 </div>
-    <!-- Product: LingChievo Metal Zip Tie Gun -->
+
+
 <div class="product-card">
+
     <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/metal-zip-tie-gun.jpg"
          alt="LingChievo Metal Zip Tie Gun with Stainless Steel Zip Ties">
 
     <h3>LingChievo Metal Zip Tie Gun</h3>
 
-    <p>Heavy-duty metal zip tie tool with 100 stainless steel zip ties for fastening and cutting cable ties.</p>
+    <p>
+        Heavy-duty metal zip tie tool with
+        100 stainless steel zip ties for fastening
+        and cutting cable ties.
+    </p>
 
-    <a href="https://amzn.to/4x41iNZ" class="button" target="_blank" rel="noopener">
-        View Deal
+    <a href="https://amzn.to/4x41iNZ"
+       class="button"
+       target="_blank"
+       rel="noopener">
+       View Deal
     </a>
+
 </div>
-<h2 id="school">📚 School</h2>
+
+</div>
+</section>
+
+
+<!-- =========================
+     SCHOOL
+========================= -->
+
+<section id="school" class="products-section">
+
+<h2>📚 School</h2>
+
 <div class="products-grid">
+
 <div class="product-card">
-<img class="product-image" src="pvc-mesh-pouch.jpg" alt="PVC Mesh Zipper Pouch Set">
-    <h3>7 Pack PVC Mesh Zipper Pouch Set with Organizer Bag (ASIN: B0GHQH5VQY)</h3>
-    <p>8pcs A4/Letter Size Translucent File Bags — Water-Resistant Plastic Document Pouches for Office, College, School & Travel Supplies.</p>
-    <a class="button" href="https://amzn.to/4wcqIri" target="_blank" rel="noopener noreferrer">Shop Now</a>
+
+    <img class="product-image"
+         src="pvc-mesh-pouch.jpg"
+         alt="PVC Mesh Zipper Pouch Set">
+
+    <h3>
+        7 Pack PVC Mesh Zipper Pouch Set
+        with Organizer Bag (ASIN: B0GHQH5VQY)
+    </h3>
+
+    <p>
+        8pcs A4/Letter Size Translucent File Bags —
+        Water-Resistant Plastic Document Pouches
+        for Office, College, School &amp; Travel Supplies.
+    </p>
+
+    <a class="button"
+       href="https://amzn.to/4wcqIri"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+
 </div>
-    <!-- Product: BIC Xtra-Smooth Mechanical Pencils -->
+
+
 <div class="product-card">
+
     <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/bic-xtra-smooth-mechanical-pencils.jpg"
          alt="BIC Xtra-Smooth Mechanical Pencils 40 Count">
 
     <h3>BIC Xtra-Smooth Mechanical Pencils</h3>
 
-    <p>40-count pack of smooth-writing 0.7mm mechanical pencils with colorful pastel designs.</p>
+    <p>
+        40-count pack of smooth-writing
+        0.7mm mechanical pencils with colorful pastel designs.
+    </p>
 
-    <a href="https://amzn.to/4cmj1Yq" class="button" target="_blank" rel="noopener">
-        View Deal
+    <a href="https://amzn.to/4cmj1Yq"
+       class="button"
+       target="_blank"
+       rel="noopener">
+       View Deal
     </a>
+
 </div>
-    <!-- School Product -->
+
+
 <div class="product-card">
+
     <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/two-pocket-8-tab-folder.jpg"
          alt="Forvencer 8 Count Dividers with Two Pockets">
 
     <h3>Forvencer 8 Count Dividers with Two Pockets</h3>
 
-    <p>Colorful 8-tab binder dividers with two pockets for organizing school papers, assignments, and notes.</p>
+    <p>
+        Colorful 8-tab binder dividers with two pockets
+        for organizing school papers, assignments, and notes.
+    </p>
 
-    <a href="https://amzn.to/4xM9VN6" class="button" target="_blank">View Deal</a>
+    <a href="https://amzn.to/4xM9VN6"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
 </div>
-    <!-- STAEDTLER Math Set -->
+
+
 <div class="product-card">
-    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/staedtler-math-set.jpg" alt="STAEDTLER 10-Piece Math Set">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/staedtler-math-set.jpg"
+         alt="STAEDTLER 10-Piece Math Set">
 
     <h3>STAEDTLER 10-Piece Math Set</h3>
 
-    <p>Complete math set with compass, ruler, set squares, protractor, pencil, eraser and other essential school tools.</p>
+    <p>
+        Complete math set with compass, ruler,
+        set squares, protractor, pencil, eraser
+        and other essential school tools.
+    </p>
 
-    <a href="https://amzn.to/45vyKk7" class="button" target="_blank" rel="noopener noreferrer">
-        View Deal
+    <a href="https://amzn.to/45vyKk7"
+       class="button"
+       target="_blank"
+       rel="noopener noreferrer">
+       View Deal
     </a>
+
 </div>
-    <!-- School Product -->
+
+
 <div class="product-card">
-    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/school-supply-kit.jpg" alt="K-5 School Supply Kit">
+
+    <img src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/school-supply-kit.jpg"
+         alt="K-5 School Supply Kit">
 
     <h3>K-5 School Supply Kit</h3>
 
-    <p>Complete school supply kit with pencils, colored pencils, markers, notebooks, glue, scissors, ruler, and other essential school supplies.</p>
+    <p>
+        Complete school supply kit with pencils,
+        colored pencils, markers, notebooks, glue,
+        scissors, ruler, and other essential school supplies.
+    </p>
 
-    <a href="https://amzn.to/462cnTD" class="button" target="_blank">View Deal</a>
+    <a href="https://amzn.to/462cnTD"
+       class="button"
+       target="_blank">
+       View Deal
+    </a>
+
+</div>
+
 </div>
 </section>
-    <!-- eBay Deals Section -->
-<section id="ebay-deals">
-    <h2>🛍️ eBay Deals</h2>
-    <p>Discover great deals and products from eBay.</p>
 
-    <div class="product-grid">
 
-        <!-- eBay Deals -->
+<!-- =========================
+     EBAY DEALS
+========================= -->
+
+<section id="ebay-deals" class="products-section">
+
+<h2>🛍️ eBay Deals</h2>
+
+<p>Discover great deals and products from eBay.</p>
+
+<div class="product-grid">
+
+
 <div class="product-card">
+
     <h3>💎 Cartier Jewelry</h3>
+
     <p>Explore Cartier jewelry and deals on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/cartier-jewelry-110121?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/cartier-jewelry-110121?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
-    <h3>💍 Wedding & Engagement</h3>
+
+    <h3>💍 Wedding &amp; Engagement</h3>
+
     <p>Browse wedding and engagement jewelry on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-wedding-engagement-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-wedding-engagement-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>👜 Balenciaga Handbags</h3>
+
     <p>Discover Balenciaga handbags available on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/balenciaga-handbags-110121?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/balenciaga-handbags-110121?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>💎 All Jewelry</h3>
+
     <p>Browse a wide selection of jewelry on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/all-ag-jewelry-062222?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/all-ag-jewelry-062222?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>💍 Rings</h3>
+
     <p>Find rings and jewelry styles on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-rings-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-rings-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>⌚ Men's Jewelry</h3>
+
     <p>Explore men's jewelry and accessories on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-mens-jewelry-101022?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-mens-jewelry-101022?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>📿 Bracelets</h3>
+
     <p>Browse bracelets and jewelry styles on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-bracelets-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-bracelets-071822?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>👜 Louboutin Handbags</h3>
+
     <p>Explore Louboutin handbags available on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-louboutin-handbags-091222?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-louboutin-handbags-091222?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+
 <div class="product-card">
+
     <h3>💎 Bvlgari Jewelry</h3>
+
     <p>Discover Bvlgari jewelry on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/bvlgari-jewelry-030122?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/bvlgari-jewelry-030122?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
+
 
 <div class="product-card">
+
     <h3>👜 Tom Ford Handbags</h3>
+
     <p>Browse Tom Ford handbags available on eBay.</p>
-    <a class="button" href="https://www.ebay.com/e/fashion/ag-handbags-tom-ford-100322?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">Shop on eBay</a>
+
+    <a class="button"
+       href="https://www.ebay.com/e/fashion/ag-handbags-tom-ford-100322?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored">
+       Shop on eBay
+    </a>
+
 </div>
 
+</div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact" style="display:block; width:100%; clear:both; padding:40px 20px; box-sizing:border-box; min-height:300px;">
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
 
     <h2>📞 Contact Us</h2>
 
@@ -544,21 +1387,31 @@ footer {
 
     <p>
         📧 Email:
-        <a href="mailto:yassinm502@gmail.com">yassinm502@gmail.com</a>
+        <a href="mailto:yassinm502@gmail.com">
+            yassinm502@gmail.com
+        </a>
     </p>
 
     <p>
         💬 WhatsApp:
-        <a href="https://wa.me/27814553679" target="_blank" rel="noopener noreferrer">
-            Chat with us on WhatsApp
+        <a href="https://wa.me/27814553679"
+           target="_blank"
+           rel="noopener noreferrer">
+           Chat with us on WhatsApp
         </a>
     </p>
 
 </section>
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
+
     <p>&copy; 2026 Top Choice Deals</p>
+
 </footer>
 
 </body>
