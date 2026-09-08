@@ -219,57 +219,16 @@
 
         /* MOVE YOUR CONTACT CSS HERE (INSIDE STYLE) */
         #contact {
-            display: block;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 50px 20px;
-            clear: both;
-            background: #ffffff;
-        }
-    </style>
-</head>
-<body>
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    clear: both;
+    background: #ffffff;
+  }
 
-    <!-- YOUR HEADER, NAV, AND PRODUCT SECTIONS GO HERE -->
-
-</body>
-</html>
-
-/* =========================
-       CONTACT SECTION
-    ========================= */
-
-    #contact {
-        display: block;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 50px 20px;
-        clear: both;
-        background: #ffffff;
-    }
-
-    #contact h2 {
-        margin-top: 0;
-        font-size: 1.75rem;
-    }
-
-    #contact p {
-        line-height: 1.6;
-        max-width: 800px;
-    }
-
-    #contact a {
-        color: #0073aa;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
+    /* FOOTER CSS */
     footer {
         clear: both;
         width: 100%;
@@ -278,50 +237,16 @@
         background: #222222;
         color: #ffffff;
     }
-
-    /* =========================
-       MOBILE RESPONSIVENESS
-    ========================= */
-
-    @media (max-width: 600px) {
-        nav {
-            gap: 5px;
-        }
-
-        nav a {
-            padding: 8px 10px;
-            font-size: 0.875rem;
-        }
-
-        .products-grid,
-        .product-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .product-card {
-            padding: 12px;
-        }
-
-        .product-card img,
-        .product-image {
-            max-width: 160px;
-            height: 160px;
-        }
-
-        .product-card h3 {
-            font-size: 1rem;
-        }
-    }
-    </style>
+</style>
 </head>
 <body>
-
+    
 <header>
-    <h1>Top Choice Deals</h1>
-    <p>Best Amazon US Deals &amp; Product Reviews</p>
-</header>
+<h1>Top Choice Deals</h1>
+<p>Best Amazon US Deals &amp; Product Reviews</p>
+ </header>
 
-<!-- =========================
+   <!-- =========================
      NAVIGATION
 ========================= -->
 
@@ -335,6 +260,24 @@
     <a href="#school">School</a>
     <a href="#contact">Contact</a>
 </nav>
+    <!-- PRODUCT SECTIONS (Electronics, Home & Kitchen, etc.) -->
+    <main class="products-grid">
+        <!-- ALL YOUR PRODUCT CARDS GO HERE -->
+    </main>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us anytime.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Top Choice Deals. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
 
 
 <!-- =========================
