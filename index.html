@@ -224,81 +224,83 @@
 </html>
 
 /* =========================
-   CONTACT SECTION FIX
-========================= */
+       CONTACT SECTION
+    ========================= */
 
-#contact {
-    display: block;
-    width: 100%;
-    min-height: 320px;
-    padding: 50px 20px;
-    margin: 0;
-    clear: both;
-    box-sizing: border-box;
-    background: #ffffff;
-    overflow: visible;
-}
-
-#contact h2 {
-    margin-top: 0;
-    font-size: 28px;
-}
-
-#contact p {
-    line-height: 1.6;
-    max-width: 800px;
-}
-
-#contact a {
-    color: #0073aa;
-    font-weight: bold;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 25px 20px;
-    background: #222;
-    color: #fff;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    nav {
-        gap: 5px;
+    #contact {
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        clear: both;
+        background: #ffffff;
     }
 
-    nav a {
-        padding: 8px 10px;
-        font-size: 14px;
+    #contact h2 {
+        margin-top: 0;
+        font-size: 1.75rem;
     }
 
-    .products-grid,
-    .product-grid {
-        grid-template-columns: 1fr;
+    #contact p {
+        line-height: 1.6;
+        max-width: 800px;
     }
 
-    .product-card img,
-    .product-image {
-        max-width: 160px;
-        height: 160px;
+    #contact a {
+        color: #0073aa;
+        font-weight: 700;
+        text-decoration: underline;
     }
 
-}
+    /* =========================
+       FOOTER
+    ========================= */
 
-</style>
+    footer {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        padding: 25px 20px;
+        background: #222222;
+        color: #ffffff;
+    }
+
+    /* =========================
+       MOBILE RESPONSIVENESS
+    ========================= */
+
+    @media (max-width: 600px) {
+        nav {
+            gap: 5px;
+        }
+
+        nav a {
+            padding: 8px 10px;
+            font-size: 0.875rem;
+        }
+
+        .products-grid,
+        .product-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .product-card {
+            padding: 12px;
+        }
+
+        .product-card img,
+        .product-image {
+            max-width: 160px;
+            height: 160px;
+        }
+
+        .product-card h3 {
+            font-size: 1rem;
+        }
+    }
+    </style>
 </head>
-
 <body>
 
 <header>
