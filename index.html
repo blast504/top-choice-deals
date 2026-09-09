@@ -172,72 +172,74 @@
         color: #444444;
     }
 
-    /* =========================
-       BUTTON
-    ========================= */
+    /* ===================
+   BUTTON
+   =================== */
 
-    .button {
-        display: inline-block;
-        margin-top: auto;
-        padding: 10px 16px;
-        background: #0073aa;
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: 700;
-        transition: background-color 0.2s ease;
-    }
+.button {
+  display: inline-block;
+  margin-top: 15px; /* Replaced 'auto' with a fixed spacing value */
+  padding: 10px 16px;
+  background: #0073aa;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
 
-    .button:hover {
-        background: #005f8d;
-    }
+.button:hover {
+  background: #005f8d;
+}
 
-    .button:focus-visible {
-        outline: 2px solid #005f8d;
-        outline-offset: 2px;
-    }
+.button:focus-visible {
+  outline: 2px solid #005f8d;
+  outline-offset: 2px;
+}
+/* ===================
+   MOBILE RESPONSIVENESS
+   =================== */
 
-    /* =========================
-       MOBILE RESPONSIVENESS
-    ========================= */
-
-    @media (max-width: 600px) {
-        .product-card {
-            padding: 12px;
-        }
-
-        .product-card img,
-        .product-image {
-            max-width: 150px;
-            height: 150px;
-        }
-
-        .product-card h3 {
-                font-size: 1rem;
-            }
-        }
-
-        /* MOVE YOUR CONTACT CSS HERE (INSIDE STYLE) */
-        #contact {
-    display: block;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    clear: both;
-    background: #ffffff;
+@media (max-width: 600px) {
+  .product-card {
+    padding: 12px;
   }
-        #contact h2 {
-    margin-top: 0;
-    font-size: 1.75rem;
-    text-align: center;
+
+  .product-card img,
+  .product-image {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover; /* Keeps image aspect ratio intact without stretching */
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* MOVE YOUR CONTACT CSS HERE (INSIDE STYLE) */
+
+#contact {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  clear: both;
+  background: #ffffff;
+}
+
+#contact h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 #contact p {
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 10px auto 0 auto;
-    text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 10px auto 0 auto;
+  text-align: center;
 }
 
     /* FOOTER CSS */
@@ -252,30 +254,32 @@
 </style>
 </head>
 <body>
-    
-<header>
-<h1>Top Choice Deals</h1>
-<p>Best Amazon US Deals &amp; Product Reviews</p>
- </header>
+    <header>
+  <h1>Top Choice Deals</h1>
+  <p>Best Amazon US Deals &amp; Product Reviews</p>
+</header>
 
-   <!-- =========================
-     NAVIGATION
-========================= -->
-
+<!-- Navigation Bar -->
 <nav>
-    <a href="#home">Home</a>
-    <a href="#electronics">Electronics</a>
-    <a href="#home-kitchen">Home &amp; Kitchen</a>
-    <a href="#fashion">Fashion</a>
-    <a href="#pet-supplies">Pet Supplies</a>
-    <a href="#tools">Tools</a>
-    <a href="#school">School</a>
-    <a href="#contact">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#electronics">Electronics</a>
+  <a href="#home-kitchen">Home &amp; Kitchen</a>
+  <a href="#fashion">Fashion</a>
+  <a href="#pet-supplies">Pet Supplies</a>
+  <a href="#tools">Tools</a>
+  <a href="#school">School</a>
+  <a href="#contact">Contact</a>
 </nav>
-    <!-- PRODUCT SECTIONS (Electronics, Home & Kitchen, etc.) -->
-    <main class="products-grid">
-        <!-- ALL YOUR PRODUCT CARDS GO HERE -->
-    </main>
+
+<!-- Main Content Area -->
+<main class="product-container">
+  <div class="product-card">
+    <img src="your-image.jpg" alt="Product Image">
+    <h3>Product Title</h3>
+    <p>Product description goes here.</p>
+    <a href="#" class="button">View Deal</a>
+  </div>
+</main>
 <!-- =========================
      ELECTRONICS
 ========================= -->
@@ -1536,14 +1540,7 @@
         <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/27814553679" target="_blank" rel="noopener noreferrer">Chat on WhatsApp (+27 81 455 3679)</a></p>
     </address>
 </section>
-
-  <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? Reach out to us anytime.</p>
-    </section>
-
-    <!-- FOOTER -->
+ <!-- FOOTER -->
     <footer>
         <p>&copy; Top Choice Deals. All Rights Reserved.</p>
     </footer>
