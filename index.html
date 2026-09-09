@@ -118,6 +118,27 @@
         gap: 20px;
         width: 100%;
     }
+        /* Each category takes up 100% width on its own row */
+.category-section {
+  width: 100%;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+/* Category Headings stay on their own line */
+.category-section h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left; /* Change to center if preferred */
+  font-size: 1.5rem;
+}
+
+/* Cards arrange neatly in a grid underneath the heading */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
 
     /* =========================
        PRODUCT CARD
@@ -279,6 +300,34 @@
     <p>Product description goes here.</p>
     <a href="#" class="button">View Deal</a>
   </div>
+    <main class="product-container">
+
+  <!-- PET SUPPLIES SECTION -->
+  <section class="category-section">
+    <h2 id="pet-supplies">🐾 Pet Supplies</h2>
+    <div class="products-grid">
+      <div class="product-card">...</div>
+      <div class="product-card">...</div>
+    </div>
+  </section>
+
+  <!-- TOOLS SECTION -->
+  <section class="category-section">
+    <h2 id="tools">🔧 Tools</h2>
+    <div class="products-grid">
+      <div class="product-card">...</div>
+      <div class="product-card">...</div>
+    </div>
+  </section>
+
+  <!-- SCHOOL SECTION -->
+  <section class="category-section">
+    <h2 id="school">📚 School</h2>
+    <div class="products-grid">
+      <div class="product-card">...</div>
+      <div class="product-card">...</div>
+    </div>
+  </section>
 </main>
 <!-- =========================
      ELECTRONICS
