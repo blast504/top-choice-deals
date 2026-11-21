@@ -1,102 +1,453 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="dOXReqIqVsmPFl7tibSjz6LrDx9iUsyVs5uqdbTqJTo">
-  <meta name="p:domain_verify" content="69d2f7aa468f417e1c6098f06b417ba2">
-  <title>Top Choice Deals - Amazon &amp; eBay Deals</title>
-  <meta name="description" content="Discover the best Amazon and eBay deals, top products, special offers and helpful product reviews at Top Choice Deals.">
-  <link rel="canonical" href="https://blast504.github.io/top-choice-deals/">
+    <meta name="google-site-verification" content="dOXReqIqVsmPFl7tibSjz6LrDx9iUsyVs5uqdbTqJTo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="Top Choice Deals - Amazon &amp; eBay Deals">
-  <meta property="og:description" content="Discover the best Amazon and eBay deals, top products, special offers and helpful product reviews at Top Choice Deals.">
-  <meta property="og:url" content="https://blast504.github.io/top-choice-deals/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://blast504.github.io/top-choice-deals/top-choice-deals.jpg">
+    <title>Top Choice Deals - Amazon &amp; eBay Deals</title>
+    <meta name="description" content="Discover the best Amazon and eBay deals, top products, special offers and helpful product reviews at Top Choice Deals.">
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f5f5f5; color: #222; line-height: 1.5; }
-    img { max-width: 100%; }
-    header { text-align: center; padding: 30px 20px; background: #fff; }
-    header h1 { display: inline-block; margin: 0 0 10px; padding: 12px 20px; border-radius: 8px; background: #0b3d91; color: #f5a623; font-weight: 700; }
-    header p { margin: 0; color: #555; }
-    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 15px; background: #222; }
-    nav a { padding: 10px 14px; border-radius: 5px; color: #fff; text-decoration: none; transition: background-color .2s ease; }
-    nav a:hover, nav a:focus-visible { background: #444; }
-    nav a:focus-visible, .button:focus-visible { outline: 2px solid #f5a623; outline-offset: 2px; }
+    <meta name="p:domain_verify" content="69d2f7aa468f417e1c6098f06b417ba2">
 
-    main { display: block; }
-    .products-section, .category-section { width: 100%; max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
-    section h2 { margin: 0 0 25px; text-align: center; }
-    .category-section h2 { width: 100%; font-size: 1.5rem; }
-    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; width: 100%; }
+    <link rel="canonical" href="https://blast504.github.io/top-choice-deals/">
 
-    .product-card { display: flex; flex-direction: column; align-items: center; overflow: hidden; padding: 15px; border-radius: 10px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); text-align: center; transition: transform .2s ease, box-shadow .2s ease; }
-    .product-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.12); }
-    .product-card img, .product-image { display: block; width: 180px; height: 180px; margin: 0 auto 12px; border-radius: 8px; object-fit: contain; }
-    .product-card h3 { margin: 10px 0; font-size: 1.125rem; line-height: 1.3; }
-    .product-card p { margin: 0 0 15px; font-size: .9375rem; color: #444; }
-    .product-card ul { margin: 0 0 15px; padding-left: 20px; text-align: left; }
-    .button { display: inline-block; margin-top: 15px; padding: 10px 16px; border-radius: 5px; background: #0073aa; color: #fff; font-weight: 700; text-decoration: none; transition: background-color .2s ease; }
-    .button:hover { background: #005f8d; }
+    <meta property="og:title" content="Top Choice Deals - Amazon &amp; eBay Deals">
+    <meta property="og:description" content="Discover the best Amazon and eBay deals, top products, special offers and helpful product reviews at Top Choice Deals.">
+    <meta property="og:url" content="https://blast504.github.io/top-choice-deals/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://blast504.github.io/top-choice-deals/top-choice-deals.jpg">
 
-    #contact { width: 100%; max-width: 1200px; margin: 0 auto; padding: 50px 20px; background: #fff; }
-    #contact h2 { margin-top: 0; text-align: center; }
-    #contact p { max-width: 800px; margin: 10px auto 0; text-align: center; }
-    footer { width: 100%; padding: 25px 20px; background: #222; color: #fff; text-align: center; }
+    <style>
+    /* =========================
+       RESET & GENERAL
+    ========================= */
 
-    @media (max-width: 600px) {
-      header { padding: 20px 12px; }
-      .products-section, .category-section { padding: 24px 12px; }
-      .products-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-      .product-card { padding: 12px; }
-      .product-card img, .product-image { width: 150px; height: 150px; }
-      .product-card h3 { font-size: 1rem; }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition: none !important; }
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: #f5f5f5;
+        color: #222222;
+        line-height: 1.5;
     }
-  </style>
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+        text-align: center;
+        padding: 30px 20px;
+        background: #ffffff;
+    }
+
+    header h1 {
+        margin: 0 0 10px;
+        color: #f5a623;
+        background: #0b3d91;
+        padding: 12px 20px;
+        border-radius: 8px;
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    header p {
+        margin: 0;
+        color: #555555;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+        background: #222222;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 14px;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+        background: #444444;
+        outline: none;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    .products-section {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        clear: both;
+    }
+
+    section h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    /* =========================
+       PRODUCT GRID
+    ========================= */
+
+    .products-grid,
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+        /* Each category takes up 100% width on its own row */
+.category-section {
+  width: 100%;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+/* Category Headings stay on their own line */
+.category-section h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left; /* Change to center if preferred */
+  font-size: 1.5rem;
+}
+
+/* Cards arrange neatly in a grid underneath the heading */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+    /* =========================
+       PRODUCT CARD
+    ========================= */
+
+    .product-card {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    /* PRODUCT IMAGE */
+    .product-card img,
+    .product-image {
+        width: 100%;
+        max-width: 180px;
+        height: 180px;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 12px;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+    }
+
+    .product-card:hover .product-image {
+        transform: scale(1.03);
+    }
+
+    /* PRODUCT TITLE */
+    .product-card h3 {
+        margin: 10px 0;
+        font-size: 1.125rem;
+        line-height: 1.3;
+    }
+
+    /* PRODUCT DESCRIPTION */
+    .product-card p {
+        margin: 0 0 15px;
+        font-size: 0.9375rem;
+        color: #444444;
+    }
+
+    /* ===================
+       BUTTON
+       =================== */
+
+.button {
+  display: inline-block;
+  margin-top: 15px; /* Replaced 'auto' with a fixed spacing value */
+  padding: 10px 16px;
+  background: #0073aa;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background: #005f8d;
+}
+
+.button:focus-visible {
+  outline: 2px solid #005f8d;
+  outline-offset: 2px;
+}
+
+/* ===================
+   MOBILE RESPONSIVENESS
+   =================== */
+
+@media (max-width: 600px) {
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card img,
+  .product-image {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover; /* Keeps image aspect ratio intact without stretching */
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* MOVE YOUR CONTACT CSS HERE (INSIDE STYLE) */
+
+#contact {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  clear: both;
+  background: #ffffff;
+}
+
+#contact h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+#contact p {
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+    /* FOOTER CSS */
+    footer {
+        clear: both;
+        width: 100%;
+        text-align: center;
+        padding: 25px 20px;
+        background: #222222;
+        color: #ffffff;
+    }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Top Choice Deals</h1>
-    <p>Best Amazon US Deals &amp; Product Reviews</p>
-  </header>
+    <header>
+  <h1>Top Choice Deals</h1>
+  <p>Best Amazon US Deals &amp; Product Reviews</p>
+</header>
 
-  <nav aria-label="Product categories">
-    <a href="#electronics">Electronics</a>
-    <a href="#home-kitchen">Home &amp; Kitchen</a>
-    <a href="#fashion">Fashion</a>
-    <a href="#pet-supplies">Pet Supplies</a>
-    <a href="#tools">Tools</a>
-    <a href="#school">School</a>
-    <a href="#ebay-deals">eBay Deals</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- Navigation Bar -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#electronics">Electronics</a>
+  <a href="#home-kitchen">Home &amp; Kitchen</a>
+  <a href="#fashion">Fashion</a>
+  <a href="#pet-supplies">Pet Supplies</a>
+  <a href="#tools">Tools</a>
+  <a href="#school">School</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <main>
-    <!-- Product data is maintained below. Card markup is lightweight and consistent. -->
-  </main>
+<!-- =========================
+     ELECTRONICS
+========================= -->
 
-  <section id="contact" aria-labelledby="contact-heading">
-    <h2 id="contact-heading">📞 Contact Us</h2>
-    <p>Have a question, product suggestion, or business opportunity? We'd love to hear from you.</p>
-    <h3>🤝 Affiliate &amp; Business Inquiries</h3>
-    <p>Brands, sellers, and businesses interested in product promotions, affiliate partnerships, advertising, or collaborations can contact us below:</p>
-    <address>
-      <p>📧 <strong>Email:</strong> <a href="mailto:yassinm502@gmail.com">yassinm502@gmail.com</a></p>
-      <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/27814553679" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
-    </address>
-  </section>
+<section id="home" class="products products-section">
 
-  <footer>
-    <p>&copy; 2026 Top Choice Deals. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<h2 id="electronics">📱 Electronics</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg"
+         alt="Apple AirPods Pro">
+
+    <h3>Apple AirPods Pro (2nd Gen)</h3>
+
+    <p>Premium wireless earbuds with Active Noise Cancellation.</p>
+
+    <a class="button"
+       href="https://amzn.to/3SeQSvB"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+</div>
+
+
+<div class="product-card">
+    <img class="product-image"
+         src="5th gen.jpg"
+         alt="Echo Dot">
+
+    <h3>Amazon Echo Dot (5th Gen)</h3>
+
+    <p>Smart speaker with Alexa for music, smart home control and more.</p>
+
+    <a class="button"
+       href="https://amzn.to/4wHPy3u"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+</div>
+
+<div class="product-card">
+    <img src="studios-beats.jpg"
+         alt="Beats Solo 4 Wireless On-Ear Headphones">
+
+    <h3>Beats Solo 4 Wireless On-Ear Headphones</h3>
+
+    <p>
+        Wireless Bluetooth headphones with up to 50 hours of battery life,
+        Spatial Audio, USB-C charging, and a comfortable lightweight design.
+    </p>
+   <a class="button"
+       href="https://amzn.to/4gnqesu"
+       target="_blank"
+       rel="nofollow sponsored noopener">
+        Check Price on Amazon
+    </a>
+</div>
+
+
+<div class="product-card">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg"
+         alt="Logitech MX Master 3S">
+
+    <h3>Logitech MX Master 3S Wireless Mouse</h3>
+
+    <p>Ultra-fast scrolling, ergonomic design, 8K DPI sensor.</p>
+
+    <a class="button"
+       href="https://amzn.to/3Uix7DW"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+</div>
+
+
+<div class="product-card">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/61BF3G-d1SS._AC_SY300_SX300_QL70_FMwebp_.jpg"
+         alt="PlayStation 5">
+
+    <h3>Sony PlayStation 5 Disc Edition</h3>
+
+    <p>4K Blu-ray player, 16GB GDDR6, 825GB SSD, Wi-Fi 6.</p>
+
+    <a class="button"
+       href="https://amzn.to/4wO13Xc"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+</div>
+
+
+<div class="product-card">
+    <img class="product-image"
+         src="ipad 9.jpg"
+         alt="Apple iPad">
+
+    <h3>Apple iPad 9th Generation (2021)</h3>
+
+    <p>10.2-inch, 64GB, Wi-Fi, Space Gray (Renewed).</p>
+
+    <a class="button"
+       href="https://amzn.to/4xl46FY"
+       target="_blank"
+       rel="noopener noreferrer">
+       Shop Now
+    </a>
+</div>
+   
+<div class="product-card">
+    <img class="product-image"
+         src="https://raw.githubusercontent.com/blast504/top-choice-deals/main/ebay-laptop.jpg"
+         alt="Laptop Deals on eBay">
+
+    <h3>Laptop Deals</h3>
+
+    <p>Discover great laptop deals and special offers on eBay.</p>
+
+    <a href="https://www.ebay.co.uk/e/special-events/roe-laptops-under?mkcid=1&mkrid=710-53481-19255-0&siteid=3&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1"
+       target="_blank"
+       rel="nofollow sponsored"
+       class="button">
+       View Deal
+    </a>
+</div>
+   
+<!-- eBay Monitors Deal -->
+<div class="product-card">
+    <a href="https://www.ebay.co.uk/e/_electronics/up-to-30-off-monitors?mkcid=1&mkrid=710-53481-19255-0&siteid=3&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored">
+        <img src="Monitors.jpg" alt="Up to 30% Off Monitors">
+    </a>
+
+    <h3>Up to 30% Off Monitors</h3>
+
+    <p>Save up to 30% on selected monitors for work, entertainment and gaming.</p>
+
+    <a href="https://www.ebay.co.uk/e/_electronics/up-to-30-off-monitors?mkcid=1&mkrid=710-53481-19255-0&siteid=3&campid=5339185456&toolid=10001&customid=topchoicedeals&mkevt=1" target="_blank" rel="nofollow sponsored" class="button">
+        View Deal
+    </a>
+</div>
+
+<div class="product-card">
+    <img class="product-image"
+         src="https://m.media-amazon.com/images/I/41MfXi9ERtL._AC_.jpg"
+         alt="Apple Watch Series 10">
+
+    <h3>Apple Watch Series 10</h3>
+
+    <p>
